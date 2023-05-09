@@ -1,4 +1,4 @@
-package eus.ehu.mastoclient.view.component;
+package eus.ehu.demoicon.component;
 
 import de.jensd.fx.fontawesome.AwesomeIcon;
 import javafx.beans.property.DoubleProperty;
@@ -36,7 +36,7 @@ public class Icon extends VBox{
     });
 
     public Icon() {
-        final FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/eus/ehu/mastoclient/view/component/Icon.fxml"));
+        final FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/eus/ehu/demoicon/component/Icon.fxml"));
 
         fxmlLoader.setRoot(this);
         fxmlLoader.setController(this);

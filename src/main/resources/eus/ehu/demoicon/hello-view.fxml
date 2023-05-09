@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import eus.ehu.demoicon.component.Icon?>
 <?import javafx.scene.layout.VBox?>
-
+<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="eus.ehu.demoicon.HelloController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-  </padding>
-
-  <Label fx:id="welcomeText"/>
-  <Button text="Hello!" onAction="#onHelloButtonClick"/>
+<?import java.net.URL?>
+<VBox fx:id="tweetPanel" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eus.ehu.demoicon.HelloController">
+    <stylesheets>
+        <URL value="@style/style.css" />
+    </stylesheets>
+    <!-- Buttons -->
+    <HBox alignment="CENTER" prefHeight="48.0" prefWidth="601.0" spacing="10" styleClass="tweetButtonPanel" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="6">
+        <Button fx:id="respondButton" styleClass="tweetButton">
+            <graphic>
+                <Icon size="14" value="REPLY" />
+            </graphic>
+            Reply
+        </Button>
+        <Button fx:id="retweetButton" styleClass="tweetButton">
+            <graphic>
+                <Icon size="14" value="RETWEET" />
+            </graphic>
+            Retoot
+        </Button>
+        <Button fx:id="addFavoriteButton"  styleClass="tweetButton">
+            <graphic>
+                <Icon size="14" value="HEART" />
+            </graphic>
+            Favorite
+        </Button>
+        <Button fx:id="seeDetailButton" styleClass="tweetButton">
+            <graphic>
+                <Icon size="14" value="SEARCH" />
+            </graphic>
+            View
+        </Button>
+    </HBox>
 </VBox>

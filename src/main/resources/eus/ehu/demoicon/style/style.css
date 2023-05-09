@@ -1,60 +1,6 @@
-
 /* Font awesome image */
 @font-face {
     src: url(../font/fontawesome-webfont.ttf);
-}
-
-/**
- * Panel Info elements
- */
-
-#profilePanel {
-    -fx-background-image: url("/fr/esgi/twitterc/view/image/bg.jpg");
-}
-
-/* TwitterCController rules */
-.profilePanel {
-    -fx-background-color: #eeeeee;
-    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
-    -fx-border-color: white;
-    -fx-border-width: 60 0 0 0;
-    -fx-border-style: solid;
-}
-
-/* List of properties */
-.profilePanel .profileInfoItem {
-    -fx-border-color: lightgray;
-    -fx-border-width: 0 1 0 0;
-    -fx-border-style: solid;
-    -fx-min-width: 130;
-}
-
-.profilePanel .profileInfoItem:hover Label {
-    -fx-text-fill: lightblue;
-}
-
-.profileInfoTitle {
-    -fx-font-size: 150%;
-    -fx-border-color: transparent;
-    -fx-border-width: 0 0 3 0;
-    -fx-border-style: solid;
-}
-
-/* Profile image */
-.profileImage {
-    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 50, 0, 0, 0);
-}
-
-#profileMainImage {
-    -fx-background-color: #f9f9f9;
-}
-
-.profileImageBorder {
-    -fx-border-width: 5;
-    -fx-border-color: white;
-    -fx-border-style: solid;
-    -fx-border-radius: 10;
-    -fx-background-radius: 10;
 }
 
 /* User name */
@@ -72,15 +18,6 @@
     -fx-cursor: hand;
 }
 
-#searchPanel {
-    -fx-background-image: url("../image/bg.jpg");
-    -fx-background-size: contain;
-    -fx-background-position: top;
-}
-
-/**
- * Tweet list
- */
 .tweetsContainer {
     -fx-border-width: 0;
     -fx-background-color: transparent;
